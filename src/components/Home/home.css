@@ -1,0 +1,126 @@
+.home-container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	
+}
+.home-container .row {
+	width: 100%;
+	margin: 0;
+}
+
+.home-container .image-preview img {
+	height: 500px;
+	object-fit: fill;
+}
+
+.home-container .desc-container .desc {
+	padding: 80px 50px 38px 80px;
+}
+.home-container .desc-container .desc button {
+	border: none;
+	background-color: transparent;
+	letter-spacing: 10px;
+}
+.home-container .desc-container .desc button:hover {
+	color: hsl(0, 0%, 63%);
+}
+.home-container .desc-container .desc button:hover img {
+	opacity: 0.5;
+}
+.home-container .desc-container {
+	position: relative;
+}
+.home-container .desc-container .desc-arrow {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.home-container .desc-container .desc-arrow .arrow {
+	cursor: pointer;
+}
+.home-container .desc-container .desc-arrow .arrow:hover {
+	background-color: hsl(0, 0%, 27%);
+}
+
+
+.home-container .dark-img img{
+	height: 100%;
+}
+.home-container .light-img img{
+	height: 100%;
+	
+}
+
+.home-container h4 {
+	letter-spacing: 7px;
+	font-weight: bold;
+}
+
+@media (max-width: 991px) {
+	.home-container {
+		overflow-x: hidden;
+	}
+
+	.home-container .desc-container .desc {
+		position: relative;
+		padding:  50px;
+		
+		
+	}
+
+	.home-container .desc-container .desc-arrow {
+		position: absolute;
+		bottom: 100%;
+		left: 67%;
+	}
+	.home-container .light-img {
+		padding: 0;
+	}
+	.home-container p {
+		font-size: 20px;
+	}
+	.home-container .about {
+		padding: 50px !important;
+	}
+	.home-container .light-img img{
+		padding-left: 50px;
+		
+	}
+	.home-container .light-img img{
+		padding-left: 0px;
+		
+	}
+}
+@media (min-width: 992px) {
+	.home-container h1 {
+		font-size: 36px;
+	}
+	.home-container .desc-container .desc {
+		padding: 80px 50px 38px 60px;
+		
+	}
+	.home-container .about {
+		padding: 20px !important;
+	}
+	.home-container .light-img img{
+		padding-left: 20px;
+		
+	}
+}
+@media (min-width: 1200px) {
+	.home-container h1 {
+		font-size: 48px;
+	}
+	.home-container .about {
+		padding: 35px !important;
+	}
+	.home-container .light-img img{
+		padding-left: 30px;
+		
+	}
+	
+}
